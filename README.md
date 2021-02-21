@@ -68,14 +68,7 @@ HTTP client used to make requests to the [weather API](https://openweathermap.or
 
 ### Bootstrap
 
-Used to structure the layout of the app and style some elements.
-
-### Tippy.js/react
-Used to add tooltip descriptions for each weather attribute.
-
-### React-scroll
-
-Used to add smooth scrolling effects for when certain elements are clicked.
+Used for styling.
 
 ## License
 
