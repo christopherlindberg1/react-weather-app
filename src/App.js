@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Form from './components/Form';
 import Weather from './components/Weather';
-// import Jumbotron from './components/layout/Jumbotron';
 import Info from './components/layout/Info';
 import WeatherTitle from './components/layout/WeatherTitle';
 import EmptyVerticalSpace from './components/layout/EmptyVerticalSpace';
@@ -161,8 +160,6 @@ class App extends React.Component {
 
 
     geoFail = (err) => {
-        // console.log(err);
-        // console.log(err.code === 1);
         // User denies access to position
         if (err.code === 1) {
             this.setState({
@@ -188,10 +185,6 @@ class App extends React.Component {
     render() {
         return (
             <div id="wrapper">
-                {/* <section id="jumbotron">
-          <Jumbotron />
-        </section> */}
-
                 <main>
                     <section id="main-section">
                         <div className="container-fluid">
