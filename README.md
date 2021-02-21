@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The app
 
-## Available Scripts
+Application that presents weather data from any place on earth. Users can provide cities by name or use their location to get current weather data.
 
-In the project directory, you can run:
+## Technologies
 
-### `npm start`
+The application is build with React. Bootstrap is used for styling, and other external JS-libraries are used for implementing certain functionalities, like fetching data from the [weather API](https://openweathermap.org/api).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Get started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Follow the instructions below to get started and run the app on your local machine.
 
-### `npm test`
+### Install Node.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Node.js is needed for running the local server. If you don't have Node.js installed, go to [this website](https://nodejs.org/en/) and download it.
 
-### `npm run build`
+### Clone this github repo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Use the terminal (or command line if you're using Windows) to navigate to the directory where you want to store the project files.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+cd path/to/project/folder
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone this repo to download all project files.
 
-### `npm run eject`
+```
+git clone https://github.com/christopherlindberg1/react-weather-app.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You should now have the entire project folder located in the current folder.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Install React
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Navigate to the *weather-app* folder. This is where the code lives.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+cd react-weather-app/weather-app
+```
 
-## Learn More
+Install React so that Node.js is able to run the React app. This may take a few minutes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm i react
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Start the server
 
-### Code Splitting
+Once you have downloaded all files you can start a local server and use the app. It may take a minute for the website to render the first time you start the server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+npm start
+```
 
-### Analyzing the Bundle Size
+**Note. If you get a message saying *Something is already running on port 3000* when you run this command, press "y" to use another port.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+A tab with the website should open in your browser. If a tab isn't automatically opened, go to the URL localhost:3000 (or which ever port you are using) in your browser.
 
-### Making a Progressive Web App
+## Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project uses a few external dependencies. These are all included in the *package.json* file that you downloaded when you cloned this repo. This means that you **do not** have to install them manually. Below are short descriptions of what the dependencies have been used for in this project.
 
-### Advanced Configuration
+### Axios
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+HTTP client used to make requests to the [weather API](https://openweathermap.org/api).
 
-### Deployment
+### Bootstrap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Used to structure the layout of the app and style some elements.
 
-### `npm run build` fails to minify
+### Tippy.js/react
+Used to add tooltip descriptions for each weather attribute.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### React-scroll
+
+Used to add smooth scrolling effects for when certain elements are clicked.
+
+## License
+
+This project is licensed under the MIT License - see [LICENSE.md](https://github.com/christopherlindberg1/react-weather-app/blob/master/LICENSE) for details.
