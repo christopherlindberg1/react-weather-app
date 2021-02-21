@@ -8,7 +8,7 @@ import WeatherTitle from './components/layout/WeatherTitle';
 import EmptyVerticalSpace from './components/layout/EmptyVerticalSpace';
 import Footer from './components/layout/Footer';
 import LoadingIndicator from './components/layout/LoadingIndicator';
-import LocationError from './components/layout/LocationError';
+import LocationError from './components/LocationError';
 
 const Axios = require('axios');
 
