@@ -45,12 +45,12 @@ main > section {
   padding-bottom: 2rem;
 }
 
-/* #main-section {
-  background-color: rgba(243,243,243,1);
-} */
-
 .white-area {
   background-color: #fff;
+}
+
+#forms {
+  margin-bottom: 1.5rem;
 }
 
 input[type=text] {
@@ -86,6 +86,10 @@ footer {
 
   input[type=text] {
     width: 100%;
+  }
+
+  #forms {
+    margin-bottom: 0;
   }
 
 }
